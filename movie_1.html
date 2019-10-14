@@ -1,0 +1,149 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>타이틀</title>
+
+    <style type="text/css">
+    * {
+    margin: 0px;
+    padding: 0px;
+    }
+
+    html, body {
+        height: 100%;
+        background-color: rgba(49,58,102,0.75);
+        color : #abb4d6;
+    }
+
+    header {
+        width: 100%;
+        display : grid;
+    }
+    header h1 {
+        position: relative;
+        margin : 1em auto;
+        font-size : 2em;
+    }
+    #menu{
+        position: relative;
+        margin : 1em auto;
+        height: 30px;
+        height: 20px;
+    }
+
+    #menu ul li{
+        color: white;
+        background: #0e2d5c41;
+        list-style: none;
+        float: left;
+        line-height: 30px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    #menu .menuLink{
+        text-decoration:none;
+        color:white;
+        display: block;
+        text-decoration:none;
+        margin-right: 20px;
+        font-size: 1em;
+        font-weight: bold;
+        width : 150px;
+    }
+
+    #menu .menuLink:hover{
+        text-decoration:none; 
+        color: #000;
+        background: #0d2c5b41;
+    }
+
+    #mainContent {
+        padding: 1em;
+        width: 100%;
+    }
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin : 1em auto;
+        min-width: 500px;
+        justify-content: center;
+        align-self: stretch;
+    }
+    article > section{
+        margin: 1em;
+    }
+    #midContent, #rightContent {
+        background: #0e2d5c41;
+        letter-spacing: -0.6px;
+        line-height: 1.8;
+        border-radius: 6px;
+        outline: none;
+        padding: 1em;
+    }
+
+    .Post h3 {
+        padding-bottom: 1em;
+    }
+
+    #leftContent img{
+        width : 13em;
+        height : 17em;
+    }
+
+    .hide-content{
+        display:none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> 영화 소개 페이지 </h1>
+        <nav id="menu">
+            <ul>
+                <li><a href='./movie_1.html' class='menuLink'>1번 영화</a></li>
+                <li>|</li>
+                <li><a href='./movie_2.html' class='menuLink'>2번 영화</a></li>
+                <li>|</li>
+                <li><a href='./movie_3.html' class='menuLink'>3번 영화</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id = "mainContent">
+        <article id = "movie_1">
+            <section class="Post" id="leftContent">
+                <img src ='./1.jpg'>
+            </section>
+
+            <section class="Post" id="midContent">
+                    <center><h3> 평론가 </h3></center>
+                            <p>이동진 ★★★★☆</p>
+                            <p>낯간지럽지 않게 순정을 말할 줄 아는 로맨틱코미디</p>
+                    <br>
+                            <p>임범 ★★☆☆☆</p>
+                            <p>장진식(유머라기보다) 썰렁개그</p>
+            </section>
+            <section class="Post" id="rightContent">
+                    <center><h3> 소개 </h3></center>
+                    <p>
+                        시도때도 없이 다가가는... 나는 참, 부지런한 스토커입니다
+                        <br>
+                        오직 한 남자만... (아는 여자)
+                        <br>
+                        눈높이 특이한 여자의 눈치코치 없는 러브 스토리
+                        <br>
+                        내겐 주사도, 첫사랑도, 내년도 없다! 하지만 나는 지금도... 사랑을 찾고 있다
+                        <br>
+                        너무 오래되서 그를 왜 좋아하는지 까먹었다. 하지만 나는 지금도... 사랑을 하고 있다
+                        <br>
+                        그 남자와 나 사이, 39발자국 접근 완료. 이제 그냥
+                        <br>
+                        아.는.여.자. 로만 있을 수 없다!
+                    </p>
+            </section>
+        </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>타이틀</title>
+
+    <style type="text/css">
+    * {
+    margin: 0px;
+    padding: 0px;
+    }
+
+    html, body {
+        height: 100%;
+        background-color: rgba(49,58,102,0.75);
+        color : #abb4d6;
+    }
+
+    header {
+        width: 100%;
+        display : grid;
+    }
+    header h1 {
+        position: relative;
+        margin : 1em auto;
+        font-size : 2em;
+    }
+    #menu{
+        position: relative;
+        margin : 1em auto;
+        height: 30px;
+        height: 20px;
+    }
+
+    #menu ul li{
+        color: white;
+        background: #0e2d5c41;
+        list-style: none;
+        float: left;
+        line-height: 30px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    #menu .menuLink{
+        text-decoration:none;
+        color:white;
+        display: block;
+        text-decoration:none;
+        margin-right: 20px;
+        font-size: 1em;
+        font-weight: bold;
+        width : 150px;
+    }
+
+    #menu .menuLink:hover{
+        text-decoration:none; 
+        color: #000;
+        background: #0d2c5b41;
+    }
+
+    #mainContent {
+        padding: 1em;
+        width: 100%;
+    }
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin : 1em auto;
+        min-width: 500px;
+        justify-content: center;
+        align-self: stretch;
+    }
+    article > section{
+        margin: 1em;
+    }
+    #midContent, #rightContent {
+        background: #0e2d5c41;
+        letter-spacing: -0.6px;
+        line-height: 1.8;
+        border-radius: 6px;
+        outline: none;
+        padding: 1em;
+    }
+
+    .Post h3 {
+        padding-bottom: 1em;
+    }
+
+    #leftContent img{
+        width : 13em;
+        height : 17em;
+    }
+
+    .hide-content{
+        display:none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> 영화 소개 페이지 </h1>
+        <nav id="menu">
+            <ul>
+                <li><a href='./movie_1.html' class='menuLink'>1번 영화</a></li>
+                <li>|</li>
+                <li><a href='./movie_2.html' class='menuLink'>2번 영화</a></li>
+                <li>|</li>
+                <li><a href='./movie_3.html' class='menuLink'>3번 영화</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id = "mainContent">
+        <article id = "movie_2">
+            <section class="Post" id="leftContent">
+                <img src ='./2.jpg'>
+            </section>
+
+            <section class="Post" id="midContent">
+                    <center><h3> 평론가 </h3></center>
+                            <p>김종철 ★★★★★</p>
+                            <p>한국 누아르, 살아 있네!</p>
+                    <br>
+                            <p>황진미 ★★★★☆</p>
+                            <p>독창적이진 않지만, 짜임새와 디테일이 뛰어난 누아르</p>
+                    <br>
+                            <p>이용철 ★★★☆☆</p>
+                            <p>정말 멋진데 마음으로 안 오는 신세계</p>
+                    <br>
+                            <p>김성훈 ★★★☆☆</p>
+                            <p>정청(황정민) 보는 재미로</p>
+            </section>
+            <section class="Post" id="rightContent">
+                    <center><h3> 소개 </h3></center>
+                    <p>
+                        세 남자가 가고 싶었던 서로 다른 신세계
+                        <br>
+                        국내 최대 범죄조직 골드문에 잠입 수사하러 들어간 신입경찰 이자성(이정재)
+                        <br>
+                        8년 후 실세가 된 정청(황정민)의 오른팔이 된다.
+                        <br>
+                        골드문의 회장이 사망하고 후계자 결정에 개입하는 작전을 이자성이 맡게 되지만
+                        <br>
+                        8년간 동거동락한 친형제같은 정청(황정민)을 배신해야 하는 심적 갈등을 겪게 된다.
+                        <br>
+                        "갈 땐 가더라도 담배 한 대 정도는 괜찮잖아? 거 참 죽기 딱 좋은 날씨네"
+                        <br>
+                        "중구가 시키드나 드루와 드루와"
+                    </p>
+            </section>
+        </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>타이틀</title>
+
+    <style type="text/css">
+    * {
+    margin: 0px;
+    padding: 0px;
+    }
+
+    html, body {
+        height: 100%;
+        background-color: rgba(49,58,102,0.75);
+        color : #abb4d6;
+    }
+
+    header {
+        width: 100%;
+        display : grid;
+    }
+    header h1 {
+        position: relative;
+        margin : 1em auto;
+        font-size : 2em;
+    }
+    #menu{
+        position: relative;
+        margin : 1em auto;
+        height: 30px;
+        height: 20px;
+    }
+
+    #menu ul li{
+        color: white;
+        background: #0e2d5c41;
+        list-style: none;
+        float: left;
+        line-height: 30px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    #menu .menuLink{
+        text-decoration:none;
+        color:white;
+        display: block;
+        text-decoration:none;
+        margin-right: 20px;
+        font-size: 1em;
+        font-weight: bold;
+        width : 150px;
+    }
+
+    #menu .menuLink:hover{
+        text-decoration:none; 
+        color: #000;
+        background: #0d2c5b41;
+    }
+
+    #mainContent {
+        padding: 1em;
+        width: 100%;
+    }
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin : 1em auto;
+        min-width: 500px;
+        justify-content: center;
+        align-self: stretch;
+    }
+    article > section{
+        margin: 1em;
+    }
+    #midContent, #rightContent {
+        background: #0e2d5c41;
+        letter-spacing: -0.6px;
+        line-height: 1.8;
+        border-radius: 6px;
+        outline: none;
+        padding: 1em;
+    }
+
+    .Post h3 {
+        padding-bottom: 1em;
+    }
+
+    #leftContent img{
+        width : 13em;
+        height : 17em;
+    }
+
+    .hide-content{
+        display:none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> 영화 소개 페이지 </h1>
+        <nav id="menu">
+            <ul>
+                <li><a href='./movie_1.html' class='menuLink'>1번 영화</a></li>
+                <li>|</li>
+                <li><a href='./movie_2.html' class='menuLink'>2번 영화</a></li>
+                <li>|</li>
+                <li><a href='./movie_3.html' class='menuLink'>3번 영화</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id = "mainContent">
+        <article id = "movie_3">
+            <section class="Post" id="leftContent">
+                <img src ='./3.jpg'>
+            </section>
+
+            <section class="Post" id="midContent">
+                    <center><h3> 평론가 </h3></center>
+                            <p>이동진 ★★★★★</p>
+                            <p>숱한 기시감을 뚫고 살아남은 하이틴 영화의 고운 결</p>
+                    <br>
+                            <p>김혜리 ★★★★☆</p>
+                            <p>음악과 판타지, 첫사랑 사수 위해 총궐기</p>
+                    <br>
+                            <p>박평식 ★★★★☆</p>
+                            <p>플롯도 괜찮지만 연출력이 제법이네</p>
+            </section>
+            <section class="Post" id="rightContent">
+                    <center><h3> 소개 </h3></center>
+                    <p>
+                        "나는 너를 사랑해!너도 나를 사랑하니?"
+                        <br>
+                        피아노에 천부적인 소질이 있는 상륜은 예술학교로 전학을 온다.
+                        <br>
+                        학교를 둘러보던 중, 신비스러운 피아노 연주를 하던 샤오위를 만난다.
+                        <br>
+                        그들은 아름다운 피아노 선율처럼 즐거운 시간을 보내지만,
+                        <br>
+                        상륜이 샤오위에 대해 더 알고 싶어할 때마다 그녀는 미소만 짓는다.
+                        <br>
+                        그러던 어느날 그녀가 그의 곁에서 사라지는데...
+                    </p>
+            </section>
+        </article>
+    </section>
+</body>
+</html>
